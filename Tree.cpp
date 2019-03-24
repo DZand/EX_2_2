@@ -78,7 +78,7 @@ Tree::Tree(Node n)
 
     {
 
-        Node *current = root;	
+        struct Node *current = root;	
 
         while(current->data != data)
 
