@@ -5,19 +5,27 @@ using namespace ariel;
 Tree::Tree()
 
 {
-
     Troot=NULL;
-
 }
 
 Tree::Tree(Node n)
 
 {
-
     Troot=&n;
 
 }
-
+Node::Node()
+{
+    value=0;
+    right=left=NULL;
+    size++;
+}
+Node::Node(int a)
+{
+    size++;
+    value=a;
+    right=left=NULL;
+}
   int Tree:: size()
 
     {
