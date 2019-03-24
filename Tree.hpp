@@ -1,52 +1,24 @@
 #pragma once
-
-
-
 #include <iostream>
 
-
-
-
-
 namespace ariel
-
 {
-
   struct Node
-
   {
-
-    
-
 	int value;
-
 	struct Node *left;
-
 	struct Node *right;
-
   };
 
-
-
 class Tree
-
 {
-
-  
-
   Node* Troot;
-
-
-
+	
   public:
 
   Tree(Node);
 
-  Tree();
-
-  
-
-    
+  Tree();  
 
     public:          //functions
 
@@ -68,12 +40,5 @@ class Tree
 
     void print();
 
-    
-
   };
-
-    
-
-    
-
 }
