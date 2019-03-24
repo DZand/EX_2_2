@@ -8,6 +8,8 @@ namespace ariel
 	int value;
 	struct Node *left;
 	struct Node *right;
+	Node();
+	Node(int);
   };
 
 class Tree
