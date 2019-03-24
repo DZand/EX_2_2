@@ -32,7 +32,7 @@ class Tree
 
     void insert(int);
 
-    void Tree::HelpInsert(Node* main,Node NewNode);
+    void HelpInsert(Node* main,Node NewNode);
 
     int root();
 
