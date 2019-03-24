@@ -49,14 +49,16 @@ Tree::Tree(Node n)
         return 0;
 
     }
-
-    Node * Tree::insert(int a)
+    
+    
+    void Tree::insert(int a)
 
     {
-
-        return Troot;
-
+        Node n= new Node(a);
+        PrivateInsert(Troot,n);
     }
+
+    
 
     int Tree:: root()
 
