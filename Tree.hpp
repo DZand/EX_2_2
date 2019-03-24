@@ -30,7 +30,7 @@ class Tree
 
     int right(int);
 
-    Node * insert(int);
+    void insert(int);
 
     int root();
 
