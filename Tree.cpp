@@ -95,7 +95,7 @@ Tree::Tree(Node n)
          //not found
          	 if(current == NULL)
          	   {
-            	       return NULL;
+            	       return false;
          	   }
                }			
        }
