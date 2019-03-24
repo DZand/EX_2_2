@@ -32,6 +32,8 @@ class Tree
 
     void insert(int);
 
+    void Tree::HelpInsert(Node* main,Node NewNode);
+
     int root();
 
     void remove (int);
