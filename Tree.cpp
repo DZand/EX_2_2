@@ -1,7 +1,6 @@
 #include "Tree.hpp"
 
 using namespace ariel;
-public:
 static int size=0;
 Tree::Tree()
 
