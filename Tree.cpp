@@ -55,7 +55,12 @@ Tree::Tree(Node n)
 
     {
         Node n= new Node(a);
-        PrivateInsert(Troot,n);
+        HelpInsert(Troot,n);
+    }
+
+    void Tree::HelpInsert(Node* main,Node NewNode)
+    {
+        
     }
 
     
