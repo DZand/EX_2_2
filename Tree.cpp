@@ -78,18 +78,18 @@ Tree::Tree(Node n)
 
     {
         struct Node *current = root;	
-        while(current->data != data)
+        while(current->value != a)
         {
              if(current != NULL) 
              	{  //go to left tree
-                   if(current->data > data)
+                   if(current->value > a)
                     {
-                         current = current->leftChild;
+                         current = current->left;
 
                     }     //else go to right tree
                   else 
             	    {                
-            		current = current->rightChild;
+            		current = current->right;
 
              	    }
          //not found
