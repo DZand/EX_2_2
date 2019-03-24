@@ -20,9 +20,9 @@ namespace ariel
 
 	int value;
 
-	Node *left;
+	struct Node *left;
 
-	Node *right;
+	struct Node *right;
 
   };
 
