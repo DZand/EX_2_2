@@ -54,13 +54,35 @@ Tree::Tree(Node n)
     void Tree::insert(int a)
 
     {
-        Node n= new Node(a);
-        HelpInsert(Troot,n);
+        if(!this.contains(a))
+        {
+            throw std::invalid_argument( "already exist!" );
+        }
+        else
+        {
+            Node n= new Node(a);
+            HelpInsert(Troot,n);
+        }
+                   
     }
 
     void Tree::HelpInsert(Node* main,Node NewNode)
     {
-        
+        if(main==NULL) 
+         {
+         main=&NewNode;
+         }
+        else
+        {
+          if(main->value>NewNode->value)
+            {
+              HelpInsert(main->left,NewNode);
+            }
+          else
+            {
+                HelpInsert(main->right,NewNode);
+            }    
+        }
     }
 
     
@@ -84,29 +106,7 @@ Tree::Tree(Node n)
     bool Tree:: contains(int a)
 
     {
-        struct Node *current = root;	
-        while(current->value != a)
-        {
-             if(current != NULL) 
-             	{  //go to left tree
-                   if(current->value > a)
-                    {
-                         current = current->left;
-
-                    }     //else go to right tree
-                  else 
-            	    {                
-            		current = current->right;
-
-             	    }
-         //not found
-         	 if(current == NULL)
-         	   {
-            	       return false;
-         	   }
-               }			
-       }
-   return current;
+        return false;
 
     }
 
